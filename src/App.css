@@ -1,0 +1,79 @@
+html, .App, #root, body {
+  background-color: #6a1d5e;
+}
+
+* {
+  color: gold;
+  user-select: none;
+}
+
+.App{
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.Sequencer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+
+  margin: 32px;
+}
+
+.StepBlockRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.StepBlock {
+  height: 48px;
+  width: 48px;
+  border: 2px solid gold;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  
+  cursor: pointer;
+}
+
+.StepBlock p {
+  margin: 0px;
+  margin-left: 4px;
+
+  user-select: none;
+}
+
+.StepBlock.enabled p {
+  color: #6a1d5e;
+}
+
+.StepBlock.enabled {
+   background-color: gold;
+}
+
+.StepBlock.active {
+  border: 4px solid gold;
+}
+
+.StepBlock.enabled.active {
+  border: 4px solid #6a1d5e;
+}
+
+.InstrumentTitle {
+  width: 100px;
+  font-weight: 600;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 12px;
+}
