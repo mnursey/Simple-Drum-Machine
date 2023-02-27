@@ -173,9 +173,9 @@ class App extends React.Component {
         <h1>
           Simple Drum Machine
 
-          <span className="author">
+          <a href="https://mnursey.github.io" target="_blank" className="author">
             by mnursey
-          </span>
+          </a>
         </h1>
         
         {StepSequencer(this.state)}
